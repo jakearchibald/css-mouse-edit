@@ -1,0 +1,15 @@
+html {
+  background: #eee;
+}
+
+.css-editor {
+  font-family: "Courier New";
+}
+
+.css-editor .rule {
+  white-space: pre;
+}
+
+.interactive-val {
+  color: blue;
+}

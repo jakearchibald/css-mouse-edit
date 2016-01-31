@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editor</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <div class="css-edit"></div>
+  <script src="script.js"></script>
+  <script>
+    document.querySelector('.css-edit').appendChild(
+      new CSSEdit(
+        window.parent.document.styleSheets
+      ).container
+    );
+  </script>
+</body>
+</html>
