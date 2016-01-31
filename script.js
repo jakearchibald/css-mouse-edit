@@ -26,7 +26,8 @@
         this._styleEl.appendChild(span);
       }
 
-      this.container.appendChild(document.createTextNode(styleStr.slice(pos) + ';\n'));
+      this._styleEl.appendChild(document.createTextNode(styleStr.slice(pos)));
+      this.container.appendChild(document.createTextNode(';\n'));
       this.container.addEventListener('mousedown', event => this._onMouseDown(event));
     }
 
